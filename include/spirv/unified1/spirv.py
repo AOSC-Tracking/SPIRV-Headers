@@ -197,6 +197,9 @@ spv = {
         'StreamingInterfaceINTEL' : 6154,
         'RegisterMapInterfaceINTEL' : 6160,
         'NamedBarrierCountINTEL' : 6417,
+        'MaximumRegistersINTEL' : 6461,
+        'MaximumRegistersIdINTEL' : 6462,
+        'NamedMaximumRegistersINTEL' : 6463,
     },
 
     'StorageClass' : {
@@ -1170,6 +1173,7 @@ spv = {
         'GlobalVariableFPGADecorationsINTEL' : 6189,
         'GroupUniformArithmeticKHR' : 6400,
         'CacheControlsINTEL' : 6441,
+        'RegisterLimitsINTEL' : 6460,
     },
 
     'RayFlagsShift' : {
@@ -1318,6 +1322,10 @@ spv = {
         'WriteThroughINTEL' : 1,
         'WriteBackINTEL' : 2,
         'StreamingINTEL' : 3,
+    },
+
+    'NamedMaximumNumberOfRegisters' : {
+        'AutoINTEL' : 0,
     },
 
     'Op' : {

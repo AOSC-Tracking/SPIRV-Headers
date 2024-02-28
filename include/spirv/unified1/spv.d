@@ -209,6 +209,9 @@ enum ExecutionMode : uint
     StreamingInterfaceINTEL = 6154,
     RegisterMapInterfaceINTEL = 6160,
     NamedBarrierCountINTEL = 6417,
+    MaximumRegistersINTEL = 6461,
+    MaximumRegistersIdINTEL = 6462,
+    NamedMaximumRegistersINTEL = 6463,
 }
 
 enum StorageClass : uint
@@ -1215,6 +1218,7 @@ enum Capability : uint
     GlobalVariableFPGADecorationsINTEL = 6189,
     GroupUniformArithmeticKHR = 6400,
     CacheControlsINTEL = 6441,
+    RegisterLimitsINTEL = 6460,
 }
 
 enum RayFlagsShift : uint
@@ -1383,6 +1387,11 @@ enum StoreCacheControl : uint
     WriteThroughINTEL = 1,
     WriteBackINTEL = 2,
     StreamingINTEL = 3,
+}
+
+enum NamedMaximumNumberOfRegisters : uint
+{
+    AutoINTEL = 0,
 }
 
 enum Op : uint

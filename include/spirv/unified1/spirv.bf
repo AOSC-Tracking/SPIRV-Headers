@@ -207,6 +207,9 @@ namespace Spv
             StreamingInterfaceINTEL = 6154,
             RegisterMapInterfaceINTEL = 6160,
             NamedBarrierCountINTEL = 6417,
+            MaximumRegistersINTEL = 6461,
+            MaximumRegistersIdINTEL = 6462,
+            NamedMaximumRegistersINTEL = 6463,
         }
 
         [AllowDuplicates, CRepr] public enum StorageClass
@@ -1213,6 +1216,7 @@ namespace Spv
             GlobalVariableFPGADecorationsINTEL = 6189,
             GroupUniformArithmeticKHR = 6400,
             CacheControlsINTEL = 6441,
+            RegisterLimitsINTEL = 6460,
         }
 
         [AllowDuplicates, CRepr] public enum RayFlagsShift
@@ -1381,6 +1385,11 @@ namespace Spv
             WriteThroughINTEL = 1,
             WriteBackINTEL = 2,
             StreamingINTEL = 3,
+        }
+
+        [AllowDuplicates, CRepr] public enum NamedMaximumNumberOfRegisters
+        {
+            AutoINTEL = 0,
         }
 
         [AllowDuplicates, CRepr] public enum Op
